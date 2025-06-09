@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .brand-name h1 {
+      font-size: 22px;
+      color: #003366;
+      margin: 0;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .brand-name p {
+      font-size: 13px;
+      color: #555;
+      margin: 2px 0 0;
+      font-weight: 500;
+    }
+
+    nav {
+      background: #fff;
+      padding: 10px 32px;
+      border-radius: 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      border: 1px solid #d1e3f8;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #0056b3;
+    }
+
+    .manpower {
+      padding: 6rem 0 4rem;
+      background-color: #e6f0f9;
+    }
+
+    .manpower h2 {
+      text-align: center;
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .manpower .subtitle {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      color: #003366;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .service-item {
+      background-color: #003366;
+      color: white;
+      padding: 1.5rem 4rem;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      min-height: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 500px;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      background-color: #004080;
+    }
+
+    .service-item h3 {
+      margin-bottom: 0.4rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .service-item p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin: 0;
+      max-width: 400px;
+    }
+
+    @media (max-width: 1200px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+      .service-item {
+        min-width: auto;
+        padding: 1.5rem 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <img src="pacific-logo.png" alt="Pacific Overseas Consult Logo" />
+        
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#current-job">Current Job</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="manpower">
+    <div class="container">
+      <h2>Supplying Manpower Where It Matters Most</h2>
+      <p class="subtitle">
+        For more than two decades, we have been connecting skilled, semi-skilled, and 
+        unskilled professionals with leading employers across key global industries. Through 
+        our proven recruitment process, we ensure that the right talent meets the right 
+        opportunity — efficiently, reliably, and with integrity.
+      </p>
+      <div class="service-grid">
+        <div class="service-item">
+          <h3>Construction</h3>
+          <p>Skilled, semi-skilled, and unskilled labor for infrastructure and civil projects</p>
+        </div>
+        <div class="service-item">
+          <h3>Agriculture</h3>
+          <p>Reliable workforce for agricultural needs</p>
+        </div>
+        <div class="service-item">
+          <h3>Precast & Manufacturing</h3>
+          <p>Factory workers, assemblers & plant technicians for infrastructure production.</p>
+        </div>
+        <div class="service-item">
+          <h3>Security Services</h3>
+          <p>Trained personnel for industrial, commercial & residential security</p>
+        </div>
+        <div class="service-item">
+          <h3>Packaging</h3>
+          <p>Workers for food packing & processing</p>
+        </div>
+        <div class="service-item">
+          <h3>Transportation</h3>
+          <p>Drivers, logistics assistants & delivery personnel for efficient transport and supply chain operations</p>
+        </div>
+        <div class="service-item">
+          <h3>Healthcare</h3>
+          <p>Nurses and caregivers for patient care and support in medical facilities</p>
+        </div>
+        <div class="service-item">
+          <h3>Hospitality</h3>
+          <p>Hotel & restaurant housekeeping & front-line service staff for exceptional guest experiences and facility management</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

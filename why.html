@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why Nepalese Workforce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #003366;
+      --secondary-color: #e6f0f9;
+      --text-color: #2d3748;
+      --border-radius: 16px;
+      --transition: all 0.3s ease;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--secondary-color);
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.7;
+      color: var(--text-color);
+    }
+
+    .hero-section {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .hero-text {
+      font-size: 1.1rem;
+      color: #4a5568;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .reason-card {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+      border: 1px solid rgba(0, 51, 102, 0.1);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .reason-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--primary-color);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .reason-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .reason-card:hover::before {
+      opacity: 1;
+    }
+
+    .reason-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      opacity: 0.1;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      line-height: 1;
+    }
+
+    .reason-card h3 {
+      color: var(--primary-color);
+      font-size: 1.4rem;
+      margin: 0 0 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .reason-card p {
+      color: #4a5568;
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .conclusion {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 2.5rem;
+      margin: 3rem auto;
+      max-width: 1200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 51, 102, 0.1);
+      text-align: center;
+    }
+
+    .conclusion p {
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .conclusion strong {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    @media (max-width: 1024px) {
+      .reasons-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hero-section {
+        padding: 1rem;
+      }
+
+      .reason-card {
+        padding: 1.5rem;
+      }
+
+      .reason-number {
+        font-size: 2.5rem;
+      }
+
+      .conclusion {
+        padding: 2rem;
+        margin: 2rem auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-section">
+    <h1>Nepalese Workers: Dedicated, Reliable & Hardworking</h1>
+    <p class="hero-text">Nepalese workers have earned a strong reputation internationally for their dedication, adaptability, and strong work ethic. Here's why employers across the globe consistently choose Nepalese to meet their workforce needs:</p>
+  </div>
+
+  <div class="reasons-grid">
+    <div class="reason-card">
+      <div class="reason-number">1</div>
+      <h3>Hardworking and Reliable</h3>
+      <p>Nepalese workers are known for their commitment to hard work and reliability. They approach every job with discipline and a positive attitude, ensuring consistent productivity and high-quality results.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-number">2</div>
+      <h3>Skilled and Versatile</h3>
+      <p>Whether in construction, healthcare, hospitality, manufacturing, or agriculture, Nepalese workers bring a diverse set of skills. Many have formal training and certifications, while others gain valuable hands-on experience, making them adaptable to a variety of roles and industries.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-number">3</div>
+      <h3>Culturally Adaptable</h3>
+      <p>Having worked across multiple countries in Asia, the Middle East, and beyond, Nepalese workers quickly adjust to new cultures and environments. Their respectful and cooperative nature makes integration into diverse teams smooth and efficient.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-number">4</div>
+      <h3>Strong Commitment to Employer Satisfaction</h3>
+      <p>Nepalese workers value the opportunities to work abroad and often demonstrate strong loyalty and dedication to their employers, reducing turnover and promoting workforce stability.</p>
+    </div>
+
+    <div class="reason-card">
+      <div class="reason-number">5</div>
+      <h3>Communication Skills</h3>
+      <p>Most of the Nepalese workers possess good communication skills, including proficiency in English, enabling effective collaboration and understanding of workplace instructions and safety protocols.</p>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <p><strong>At Pacific Overseas Consult</strong>, we take pride in representing this talented workforce. We ensure every worker properly understands their job description and is ready to contribute positively to your organization from day one.</p>
+  </div>
+</body>
+</html>
