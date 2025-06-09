@@ -9,137 +9,10 @@ body {
   line-height: 1.6;
 }
 
-/* Header Styles */
-header {
-  background-color: white;
-  padding: 1.5rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.logo img {
-  height: 55px;
-  width: auto;
-}
-
-nav {
-  background: #fff; 
-  padding: 10px 32px;
-  border-radius: 40px; 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); 
-  border: 1px solid #d1e3f8; 
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 3rem;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-
-.nav-links li {
-  padding: 0;
-  margin: 0;
-  border: none;
-  outline: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #1a2b47;
-  font-weight: 600;
-  font-size: 20px;
-  transition: color 0.3s ease;
-  padding: 0;
-  background: none;
-  border: none;
-  outline: none;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.nav-links a:hover {
-  color: #0056b3;
-}
-
-/* Dropdown styles */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  min-width: 250px;
-  list-style: none;
-  padding: 1rem 0;
-  margin-top: 1rem;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown-menu li {
-  padding: 0;
-}
-
-.dropdown-menu a {
-  display: block;
-  padding: 0.7rem 1.5rem;
-  color: #1a2b47;
-  font-size: 16px;
-  text-transform: none;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-  background-color: #f8f9fa;
-}
-
-
-.dropdown > a::after {
-  /* content: "▼"; */
-  font-size: 12px;
-  margin-left: 5px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 /* Locations Section */
@@ -207,6 +80,7 @@ nav {
   margin: 0 auto 3rem;
   color: #003366;
 }
+
 /* service */
 .service-grid {
   display: grid;
