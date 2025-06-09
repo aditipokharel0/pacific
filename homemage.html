@@ -20,84 +20,14 @@
       line-height: 1.6;
     }
 
-    header {
-      background-color: white;
-      padding: 1rem 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 2rem;
     }
 
-    .header-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .logo img {
-      height: 60px;
-      width: auto;
-    }
-
-    .brand-name h1 {
-      font-size: 22px;
-      color: #003366;
-      margin: 0;
-      font-weight: 700;
-      line-height: 1;
-    }
-
-    .brand-name p {
-      font-size: 13px;
-      color: #555;
-      margin: 2px 0 0;
-      font-weight: 500;
-    }
-
-    nav {
-      background: #fff;
-      padding: 10px 32px;
-      border-radius: 40px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-      border: 1px solid #d1e3f8;
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #003366;
-      font-weight: 500;
-      font-size: 16px;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: #0056b3;
-    }
-
     .manpower {
-      padding: 6rem 0 4rem;
+      padding: 3rem 0 4rem;
       background-color: #e6f0f9;
     }
 
@@ -169,20 +99,97 @@
         padding: 1.5rem 3rem;
       }
     }
+
+    /* Header Styles */
+    .header {
+      background-color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-container img {
+      height: 60px;
+      width: auto;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #003366;
+      transition: width 0.3s ease;
+    }
+
+    .nav-menu a:hover::after {
+      width: 100%;
+    }
+
+    .nav-menu a:hover {
+      color: #004080;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        gap: 2rem;
+      }
+      
+      .nav-menu a {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="container header-flex">
-      <div class="logo">
-        <img src="pacific-logo.png" alt="Pacific Overseas Consult Logo" />
-        
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="pacific-logo.png" alt="Pacific Overseas Consult Logo">
       </div>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-menu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#current-job">Current Job</a></li>
           <li><a href="#contact">Contact us</a></li>
@@ -236,6 +243,5 @@
       </div>
     </div>
   </section>
-
 </body>
 </html>
